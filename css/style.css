@@ -67,13 +67,16 @@
     background-color: white;
     left: 25vh;
     z-index: 2;
+
 }
-.redondo {
+
+.img-user img{
 	display: block;
 	margin: auto;
 	border-radius: 50%;
 	width: 90%;
-    background-image: url("../img/1.jpg");
+    height: 90%;
+
 }
 
 .pisc {
