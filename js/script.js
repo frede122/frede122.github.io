@@ -1,37 +1,57 @@
-window.onscroll = function() {myFunction()};
+window.onscroll = function() {scrollFunction()};
 
 
-var navbar = document.getElementById("stickymenu");
-var sticky = stickymenu.offsetTop;
-var area = document.getElementById("area-3");
-var about = document.getElementById("aboutme");
 
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-      stickymenu.classList.add("yes-sticky");
-      stickymenu.classList.remove("no-sticky");
-      stickymenu.classList.add("bg-dark");
-     
-      
-  } else {
-    stickymenu.classList.add("no-sticky");
-    stickymenu.classList.remove("yes-sticky");
-    stickymenu.classList.remove("bg-dark");
+ var navbar = document.getElementById("stickymenu");
+ var sticky = stickymenu.offsetTop;
 
-  }
-    if(window.pageYOffset >= area.offsetTop - 400){
+
+
+function stickyBar(){
+
+    
+}
+
+function stickyArea(){
+    var area = document.getElementById("area-3");
+    var about = document.getElementById("aboutme");
+    var imgAbout = document.getElementById("img-user");
+    if(window.pageYOffset + (screen.height * 0.7 ) >= area.offsetTop){
+        
         about.classList.remove("opacityObj");
         descr.classList.remove("opacityObj");
-        about.classList.add("bounceInRight");
-        descr.classList.add("bounceInUp");
+        about.classList.add("fadeInRight");
+        descr.classList.add("fadeInUp");
+        hist1.classList.add("fadeInLeftBig");
+        hist2.classList.add("fadeInLeftBig");
         
     }
-    if(window.pageYOffset <= area.offsetTop - 600){
-        about.classList.remove("bounceInRight");
-        descr.classList.remove("bounceInUp");
+    else{
+        about.classList.remove("fadeInRight");
+        descr.classList.remove("fadeInUp");
         about.classList.add("opacityObj");
         descr.classList.add("opacityObj");
+        hist1.classList.remove("fadeInLeftBig");
+        hist2.classList.remove("fadeInLeftBig");
     }
+}
+
+
+function scrollFunction() {
+    if (window.pageYOffset > stickymenu.offsetTop) {
+
+      stickymenu.classList.add("yes-sticky","bg-dark");
+      stickymenu.classList.remove("no-sticky");
+       
+     
+      
+    } else {
+        stickymenu.classList.add("no-sticky");
+        stickymenu.classList.remove("yes-sticky");
+        stickymenu.classList.remove( "bg-dark");
+    }
+    stickyArea();
+    
 }
 
 
