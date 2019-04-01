@@ -186,6 +186,12 @@
     -webkit-animation-delay: 0s;
 }
 
+#typed-box{
+    position: relative;
+    margin: auto auto auto 25%;
+    width: 900px;
+}
+
 #header > *{
     z-index: 3;
 }

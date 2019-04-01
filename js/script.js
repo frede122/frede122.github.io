@@ -1,12 +1,6 @@
 window.onscroll = function() {scrollFunction()};
 
 
-
- var navbar = document.getElementById("stickymenu");
- var sticky = stickymenu.offsetTop;
-
-
-
 function stickyBar(){
 
     
@@ -53,5 +47,7 @@ function scrollFunction() {
     stickyArea();
     
 }
+
+
 
 

@@ -44,8 +44,18 @@
             </nav>
 
             <h1 class="h1">{ <span style="color:whitesmoke">Frede</span>: <span style="color: orangered">Mandu</span> }</h1>
-            <p><span style="color:limegreen">frede@mandu</span>:<span style="color:blue">~</span>$ <span class="pisc">|</span></p>
-
+        
+                <div id="typed-strings">
+                    <p>Bem vindo ao meu <strong>Portfolio</strong>.</p>
+                    <p>sudo apt-get install portfolio</p>
+                    <p>gcc portfolio.c</p>
+                </div>
+                
+        
+        <div id="typed-box">
+            <p><span style="color:limegreen">frede@mandu</span>:<span style="color:blue">~</span>$                          <span id="typed"></span>    
+            </p>
+        </div>
     </header>
     <main>
               
@@ -94,13 +104,30 @@
     
     </main>
     <aside></aside>
-    <footer id="footer"><div id="divFooter"></div></footer>
+    <footer id="footer"><div id="divFooter"></div>
+    
+        
+        
+    
+    </footer>
 
 
     <script src="js/jquery-3.3.1.slim.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>    
     <script src="js/script.js"></script>
+    <script src="/js/typed.min.js"></script>
+    <script>
+          
+          var typed = new Typed('#typed', {
+          stringsElement: '#typed-strings',
+          backSpeed: 20,
+          typeSpeed: 55,
+          loop: true,
+          loopCount: Infinity
+        });
+
+  </script>
 </body>
 
 </html>
