@@ -11,27 +11,74 @@
 }
 
 #area-2 {
+    background-color:#a1a1a1;
+    height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-flow: wrap;
+    overflow: hidden;
+    
+}
+
+#area-2 .container{
+    height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:column;
+    flex-flow: column;
+    position: relative;
+    z-index: 3;
+}
+
+#area-2 h2{
+    color: orangered;
+    font-size: 4rem;
+}
+#area-2 .buton {z-index: 2;margin: 80px;}
+
+#area-2 h2{z-index: 2;margin: 60px;}
+#area-2 .buton{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-flow: wrap;
+    position: relative;
+
+}
+#area-2 .background {
+    width: 100%;
+    height: 820px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
     background-color: blue;
     background-attachment: fixed;
     background-image: url(../img/7.jpg);
     background-position:top;
     background-size: cover;
-    height: 600px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    height: 800px;
+    z-index: 1;
+    filter:blur(3px)grayscale(40%)  opacity(1);
+    top:-820px;
+    position: relative;
     
 }
 
+
+
 #area-3{
     background-color: white; 
-    line-height: 2rem;
-    font-size: 1.1rem;
+    line-height: 2.2rem;
+    font-size: 1.3rem;
     display: flex;
     flex-flow: no-wrap;
     height: 500px;
+    transition: 1s;
 }
 #area-3 h2{line-height: 5.4rem;font-size: 2.3rem;}
 .opacityObj{
@@ -47,8 +94,7 @@
 .about {
     width: 50%;
     float: left;
-    margin:15px;
-    
+    color: darkgray;
 }
 
 
@@ -60,11 +106,12 @@
 	display: flex;
 	position: relative;
 	top: -130px;
-	width: 400px;
-	height: 400px;
+	width: 350px;
+	height: 350px;
 	border-radius: 50%;
     background-color: white;
-    margin-left: 15%;
+    margin-left: 12%;
+    margin-right: 40px;
     z-index: 1;
     float: left;
     
@@ -84,31 +131,59 @@
 #header {
     width: 100%;
     display: flex;
-    height: 500px;
+    height: 600px;
     color: #fff;
     flex-flow: column;
-    background-color: #000000d9;
+    background-color: rgba(0,0,80,1);
 
     
+}
+
+
+@keyframes fundo{
+    0% {background-image: url(../img/9.jpg);}
+    28% {background-image: url(../img/9.jpg);}
+    33%{background-image: url(../img/6.jpg);}
+    61%{background-image: url(../img/6.jpg);}
+    66%{background-image: url(../img/2.jpg);}
+    95%{background-image: url(../img/2.jpg);}
+    100% {background-image: url(../img/9.jpg);}
+    
+}
+@-webkit-keyframes fundo{
+    0% {background-image: url(../img/9.jpg);}
+    28% {background-image: url(../img/9.jpg);}
+    33%{background-image: url(../img/6.jpg);}
+    61%{background-image: url(../img/6.jpg);}
+    66%{background-image: url(../img/2.jpg);}
+    95%{background-image: url(../img/2.jpg);}
+    100% {background-image: url(../img/9.jpg);}*/
 }
 
 #header::before{
     width: 100%;
     display: flex;
-    height: 500px;
+    height: 600px;
     content: '';
     position: absolute;
     top: 0; bottom: 0;
     left: 0; right: 0;   
-    filter: grayscale(30%);
-    background-image: url(../img/9.jpg);
+    filter: grayscale(25%);
+    /*background-image: url(../img/9.jpg);*/
     background-attachment: fixed;
-    background-position: 0 -200px;
-
+    background-position: 0 -100px;
+    transition: 1s;
     background-repeat: no-repeat;
     background-size: cover;
-    opacity: .25;
-    
+    opacity: 0.65;
+    animation-name: fundo;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-delay: 0s;
+    -webkit-animation-name: fundo;
+    -webkit-animation-duration: 30s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-delay: 0s;
 }
 
 #header > *{
@@ -118,7 +193,7 @@
 
 
 #header h1{
-    margin: auto;
+    margin: 175px auto auto auto;
     text-transform:uppercase;
 	font-size: 4.5em;
 	border-bottom: solid 1px #fff;
@@ -136,12 +211,13 @@
 
 .pisc {
     -webkit-animation-name: pisca; /* Safari 4.0 - 8.0 */
-  -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
-  -webkit-animation-iteration-count: infinite; /* Safari 4.0 - 8.0 */
-  animation-name: pisca;
-  animation-duration: 2.5s;
-  animation-iteration-count: infinite;
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-iteration-count: infinite; /* Safari 4.0 - 8.0 */
+    animation-name: pisca;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
     color: #fff;
+    font-weight:1000;
     
 }
 
@@ -178,12 +254,13 @@
 .no-sticky .nav-item-transf:first-child{
     background-color: orangered;
     background-image: linear-gradient(to right, orangered, red);
+    background-image: linear-gradient(to right, orangered, red);
     border-radius: 8px;
 }
 
 .no-sticky .nav-item-transf:hover, .no-sticky .nav-item-transf:hover a{
     background-color: orangered;
-    background-image: linear-gradient(to right, orangered, red);
+    background-image: linear-gradient(to right, orangered,  red);
     color: white !important;
     border-radius: 8px;
     transition: 1s;
@@ -192,7 +269,7 @@
 .yes-sticky{
     width: 100%;
     position: fixed !important;
-    z-index: 999;
+    z-index: 999 !important;
         
 }
 
@@ -204,19 +281,21 @@
 
 
 
-.buton li:first-child{
+.buton li:first-child{ 
     background-image: linear-gradient(to right, orangered, red);
-    background-color: orangered;
+    background-color: orangered;*/
     border: solid 1px orangered;
     border-radius: 8px;
 }
 .buton li:first-child a{ color:white}
+.buton li a {padding: 20px 45px;}
 .buton li{
     background-color: transparent;
     border: solid 1px orangered;
     border-radius: 8px;
     margin-left: 55px;
-    width: 180px;
+    width: 220px;
+    line-height: 35px;
     text-align: center;
     padding: 10px;
     list-style: none;
