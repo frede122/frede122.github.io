@@ -11,7 +11,7 @@
 }
 
 #area-2 {
-    background-color:#a1a1a1;
+    background-color:#000;
     height: 800px;
     display: flex;
     align-items: center;
@@ -34,7 +34,7 @@
 }
 
 #area-2 h2{
-    color: orangered;
+    color: white;
     font-size: 4rem;
 }
 #area-2 .buton {z-index: 2;margin: 80px;}
@@ -63,7 +63,7 @@
     background-position:top;
     background-size: cover;
     z-index: 1;
-    filter:blur(3px)grayscale(40%)  opacity(1);
+    filter:blur(3px)grayscale(40%)  opacity(0.75);
     top:-820px;
     position: relative;
     
@@ -94,7 +94,7 @@
 .about {
     width: 50%;
     float: left;
-    color: darkgray;
+    color: #656565;
 }
 
 
