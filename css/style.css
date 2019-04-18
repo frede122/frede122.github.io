@@ -1,4 +1,3 @@
-body{ font-size: 100%; }
 html{
    scroll-behavior:smooth;
 }
@@ -12,11 +11,11 @@ html{
 }
 #area-1 {
     background-color: #fff;
-    height: 800px;
+    height: 500px;
     display: flex;
     flex-flow: nowrap;
-    padding: 150px 60px;
-    line-height: 70px;
+    padding: 100px 60px;
+    
 }
 
 #area-1 h2{
@@ -25,22 +24,28 @@ html{
     font-weight: 600;
     color: orangered;
 }
+
+#area-1 h3{
+    font-weight: 600;
+    line-height: 90px;
+    font-size: 2rem;
+}
 #area-1 img{
     position: relative;
     width: 40%;
-    height: 40%;
-    margin: 10px 10px 0 50px;
+    height: 100%;
+    margin: 10px 50px 0 0px;
 }
 
 #area-1 .conteudo{
     display: block;
-    padding: 0px 0px 0px 100px    
+    padding: 10px 0px 0px 00px    
 }
 
 #area-2 {
     background-color:#000;
     
-    height: 800px;
+    height: 500px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -51,7 +56,7 @@ html{
 }
 
 #area-2 .container{
-    height: 800px;
+    height: 500px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -67,9 +72,16 @@ html{
     font-weight: 600;
     font-family: 'Rubik', sans-serif;
 }
+#area-2 h3{
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: orangered;
+}
+
 #area-2 .buton {z-index: 2;margin: 80px;}
 
-#area-2 h2{z-index: 2;margin: 60px;}
+#area-2 h2{z-index: 2;margin: 00px;}
 #area-2 .buton{
 
     display: flex;
@@ -82,7 +94,7 @@ html{
 }
 #area-2 .background {
     width: 100%;
-    height: 820px;
+    height: 520px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -93,13 +105,11 @@ html{
     background-position:top;
     background-size: cover;
     z-index: 1;
-    filter:blur(3px)grayscale(40%)  opacity(0.75);
-    top:-820px;
+    filter:blur(4px)grayscale(50%)  opacity(0.3);
+    top:-520px;
     position: relative;
     
 }
-
-
 
 #area-3{
     background-color: white; 
@@ -187,7 +197,7 @@ html{
     61%{background-image: url(../img/6.jpg);}
     66%{background-image: url(../img/2.jpg);}
     95%{background-image: url(../img/2.jpg);}
-    100% {background-image: url(../img/9.jpg);}*/
+    100% {background-image: url(../img/9.jpg);}
 }
 
 #header::before{
@@ -231,7 +241,7 @@ html{
 #header h1{
     margin: 30vh auto auto auto;
     text-transform:uppercase;
-	font-size: 6.5rem;
+	font-size: 6rem;
 	border-bottom: solid 1px #fff;
 	padding-bottom: 0.3em;
     
