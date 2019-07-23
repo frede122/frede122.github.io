@@ -11,10 +11,10 @@ html{
 }
 #area-1 {
     background-color: #fff;
-    height: 500px;
+    height: 600px;
     display: flex;
     flex-flow: nowrap;
-    padding: 100px 60px;
+    padding: 150px 60px;
     
 }
 
@@ -171,11 +171,12 @@ html{
 #header {
     width: 100%;
     display: flex;
-    height: 100vh;
+    height: 630px;
     color: #fff;
     flex-flow: column;
     background-color: rgba(0,0,80,1);
     text-shadow: 3px 3px 19px #000;
+    clip-path: polygon(0% 0%, 0% 90%, 100% 100%, 100% 0%);
     
 }
 
@@ -203,7 +204,7 @@ html{
 #header::before{
     width: 100%;
     display: flex;
-    height: 100vh;
+    height: 630px;
     content: '';
     position: absolute;
     top: 0; bottom: 0;
@@ -285,16 +286,18 @@ html{
     margin-left: 15px;
     width: 150px;
     text-align: center;
+    border-radius: 8px;
 }
 .no-sticky .nav-item-transf a{
     color:rgba(240, 65, 30, 1) !important;
     text-transform: uppercase;
-    
+    border-radius: 8px;
 }
 
 .no-sticky .nav-item-transf:first-child a{
     color:white !important;
     text-transform: uppercase;
+    border-radius: 8px;
 }
 
 .no-sticky .nav-item-transf:first-child{
@@ -329,7 +332,7 @@ html{
 
 .buton li:first-child{ 
     background-image: linear-gradient(to right, orangered, red);
-    background-color: orangered;*/
+    background-color: orangered;
     border: solid 1px orangered;
     border-radius: 8px;
 }
