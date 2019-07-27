@@ -15,7 +15,7 @@ html{
     display: flex;
     flex-flow: nowrap;
     padding: 150px 60px;
-    
+   
 }
 
 #area-1 h2{
@@ -44,7 +44,7 @@ html{
 
 #area-2 {
     background-color:#000;
-    
+    clip-path: polygon(0% 0%, 0% 100%, 100% 90%, 100% 0%);
     height: 500px;
     display: flex;
     align-items: center;
@@ -145,7 +145,7 @@ html{
 .img-user {
 	display: flex;
 	position: relative;
-	top: -130px;
+	top: -150px;
 	width: 350px;
 	height: 350px;
 	border-radius: 50%;
@@ -176,7 +176,7 @@ html{
     flex-flow: column;
     background-color: rgba(0,0,80,1);
     text-shadow: 3px 3px 19px #000;
-    clip-path: polygon(0% 0%, 0% 90%, 100% 100%, 100% 0%);
+    
     
 }
 
