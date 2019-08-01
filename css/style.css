@@ -188,7 +188,7 @@ body{ max-width: 100% ;}
     height: 630px;
     color: #fff;
     flex-flow: column;
-    background-color: rgba(0,0,80,1);
+    background-color: rgb(255, 255, 255);
     text-shadow: 3px 3px 19px rgba(0, 0, 0, 0.267);
     
     
@@ -223,12 +223,12 @@ body{ max-width: 100% ;}
     position: absolute;
     top: 0; bottom: 0;
     left: 0; right: 0;   
-    filter: grayscale(25%);
+    filter: grayscale(45%);
     background-attachment: fixed;
     transition: 1s;
     background-repeat: no-repeat;
     background-size: cover;
-    opacity: 0.65;
+    opacity: 0.88;
     animation-name: fundo;
     animation-duration: 30s;
     animation-iteration-count: infinite;
@@ -237,6 +237,7 @@ body{ max-width: 100% ;}
     -webkit-animation-duration: 30s;
     -webkit-animation-iteration-count: infinite;
     -webkit-animation-delay: 0s;
+    clip-path: polygon(0% 0%, 0% 100%, 12% 95%, 88% 95%, 100% 100%, 100% 0%);
 }
 
 #typed-box{
@@ -252,7 +253,7 @@ body{ max-width: 100% ;}
 
 
 #header h1{
-    margin: 30vh auto auto auto;
+    margin: 20vh auto auto auto;
     text-transform:uppercase;
 	font-size: 6rem;
 	border-bottom: solid 1px #fff;
@@ -261,7 +262,7 @@ body{ max-width: 100% ;}
 }
 
 #header p{    
-    margin: auto;
+    margin: 0;
 	font-size: 2em;
 	
 }
