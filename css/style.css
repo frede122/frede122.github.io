@@ -188,9 +188,9 @@ body{ max-width: 100% ;}
     height: 630px;
     color: #fff;
     flex-flow: column;
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(0,0,80,1);
     text-shadow: 3px 3px 19px rgba(0, 0, 0, 0.267);
-    
+    border-bottom-right-radius: 300px;
     
 }
 
@@ -237,7 +237,8 @@ body{ max-width: 100% ;}
     -webkit-animation-duration: 30s;
     -webkit-animation-iteration-count: infinite;
     -webkit-animation-delay: 0s;
-    clip-path: polygon(0% 0%, 0% 100%, 12% 95%, 88% 95%, 100% 100%, 100% 0%);
+    border-bottom-right-radius: 300px;
+
 }
 
 #typed-box{
@@ -247,18 +248,18 @@ body{ max-width: 100% ;}
 }
 
 #header > *{
-    z-index: 3;
+    z-index: 5;
 }
 
 
 
 #header h1{
-    margin: 20vh auto auto auto;
-    text-transform:uppercase;
+    margin: 35vh auto auto auto;
+    /*text-transform:uppercase;*/
 	font-size: 6rem;
-	border-bottom: solid 1px #fff;
 	padding-bottom: 0.3em;
     font-family: 'Rubik', sans-serif;
+    font-weight: 600;
 }
 
 #header p{    
