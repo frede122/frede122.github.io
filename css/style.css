@@ -12,9 +12,9 @@ body{ max-width: 100% ;}
 }
 #area-1 {
     background-color: #fff;
-    height: 600px;
+    min-height: 600px;
     display: flex;
-    flex-flow: nowrap;
+    flex-flow: wrap;
     padding: 150px 60px;
    
 }
@@ -33,14 +33,18 @@ body{ max-width: 100% ;}
 }
 #area-1 img{
     position: relative;
-    width: 40%;
-    height: 100%;
-    margin: 10px 50px 0 0px;
+    max-width:400px;
+    max-height: 300px;
+    margin: 70px 00px 0 0px;
 }
 
 #area-1 .conteudo{
-    display: block;
-    padding: 10px 0px 0px 00px    
+    min-width: 300px;
+    max-width: 600px;
+    display: flex;
+    flex-flow: wrap;
+    padding: 10px 0px 0px 0px;
+    margin-right: 5px;
 }
 
 #area-2 {
@@ -190,7 +194,7 @@ body{ max-width: 100% ;}
     flex-flow: column;
     background-color: rgba(0,0,80,1);
     text-shadow: 3px 3px 19px rgba(0, 0, 0, 0.267);
-    border-bottom-right-radius: 300px;
+    border-bottom-right-radius:250px;
     
 }
 
@@ -238,7 +242,7 @@ body{ max-width: 100% ;}
     -webkit-animation-duration: 30s;
     -webkit-animation-iteration-count: infinite;
     -webkit-animation-delay: 0s;*/
-    border-bottom-right-radius: 300px;
+    border-bottom-right-radius: 250px;
 
 }
 
@@ -255,13 +259,16 @@ body{ max-width: 100% ;}
 
 
 #header h1{
-    margin: 150px 100px;
+
     /*text-transform:uppercase;*/
-	font-size: 6rem;
+    top:10px;
+    left: 60px;
+	font-size:40px;
 	padding-bottom: 0.3em;
     font-family: 'Rubik', sans-serif;
     font-weight: 600;
-   
+    position: relative;
+    transition: 1s;
 }
 
 #header p{    
@@ -296,44 +303,58 @@ body{ max-width: 100% ;}
     padding: 40px 30px 30px 0px !important;
     border-bottom: 1px solid rgba(255, 136, 92, 0.13);
     border-top:5px solid rgba(255, 60, 0, 0.87);
-
+    transition: 1.5s;
 }
 
 .no-sticky .nav-item-transf{
     /*border: 1px solid rgba(240, 65, 30, 1);*/
-    transition: 1.5s;
     margin-left: 45px;
-    padding: 4px;
-    width: 200px;
+    width: 170px;
     text-align: center;
     border-radius: 8px;
     background: rgba(255, 255, 255, 0.096);
+    border: 2px solid transparent;
+    font-size: 18px;
+    font-weight: 600;
+    transition: 1.5s;
 }
 .no-sticky .nav-item-transf a{
     color:rgba(240, 65, 30, 1) !important;
     text-transform: uppercase;
     border-radius: 8px;
+    transition: 1.5s;
+    background-image: linear-gradient(to right, transparent, transparent);
 }
 
 .no-sticky .nav-item-transf:first-child a{
     color:white !important;
     text-transform: uppercase;
-    border-radius: 8px;
 }
 
 .no-sticky .nav-item-transf:first-child{
     background-color: orangered;
     background-image: linear-gradient(to right, orangered, red);
-    background-image: linear-gradient(to right, orangered, red);
     border-radius: 8px;
 }
+
+
 
 .no-sticky .nav-item-transf:hover, .no-sticky .nav-item-transf:hover a{
     background-color: orangered;
     background-image: linear-gradient(to right, orangered,  red);
     color: white !important;
     border-radius: 8px;
-    transition: 1s;
+    transition: 1.5s;
+}
+
+.no-sticky .nav-item-transf:first-child:hover, .no-sticky .nav-item-transf:first-child:hover a{
+    transition: 1.5s;
+    background: rgba(255, 255, 255, 0.096);
+    color: orangered !important;
+}
+.no-sticky .nav-item-transf:first-child:hover{
+    border: 2px solid rgba(240, 65, 30, 1);
+    background: rgba(255, 255, 255, 0.096);
 }
 
 .yes-sticky{
@@ -341,6 +362,11 @@ body{ max-width: 100% ;}
     position: fixed !important;
     z-index: 999 !important;
         
+}
+
+.yes-sticky h1{
+    font-size: 25px !important;
+    transition: 1s;
 }
 
 #stickymenu{
