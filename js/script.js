@@ -34,7 +34,7 @@ function stickyArea(){
 function scrollFunction() {
     if (window.pageYOffset > stickymenu.offsetTop) {
 
-      stickymenu.classList.add("yes-sticky","bg-dark");
+      stickymenu.classList.add("yes-sticky","bg-dark-transp");
       stickymenu.classList.remove("no-sticky");
        
      
@@ -42,7 +42,7 @@ function scrollFunction() {
     } else {
         stickymenu.classList.add("no-sticky");
         stickymenu.classList.remove("yes-sticky");
-        stickymenu.classList.remove( "bg-dark");
+        stickymenu.classList.remove( "bg-dark-transp");
     }
     stickyArea();
     
