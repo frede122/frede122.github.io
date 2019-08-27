@@ -182,96 +182,7 @@ body{ max-width: 100% ;}
     opacity: 0.0;
     transition: 1s;
 }
-#area-4 .time-line-container{
-    margin: auto;
-    width: 100%;
-    background: #2a2a2a;
-    clip-path: polygon(0% 0%, 0% 95%, 50% 100%, 100% 95%, 100% 0%, 50% 5%);
-}
 
-#area-4 .time-line-right{
-    position:relative;
-}
-
-#area-4 .time-line{
-    margin: auto;
-    width: 34px;
-    height: 34px;
-    display: flex; 
-    padding: 2px; 
-    border-radius: 50%; 
-    border: solid 3px rgb(255, 100, 44);
-}
-.time-line-box {
-    background: white;
-    top: -15px;
-    width: 350px;
-    height: 150px;
-    border-radius: 10px;
-    box-shadow: 2px 4px 10px #0000002e;
-}
-
-#area-4 .time-line-right .time-line-box{
-
-    position: absolute;
-    left: calc(50% + 60px);
-
-}
-
-
-#area-4 .time-line-right .time-line-box::after{
-    content: " ";
-    height: 0;
-    position: absolute;
-    top: 20px;
-    width: 0;
-    z-index: 1;
-    left: -14px;
-    border: medium solid white;
-    border-width: 12px 15px 12px 0;
-    border-color: transparent white transparent transparent;
-}
-
-#area-4 .time-line-left{
-    position:relative;
-}
-
-#area-4 .time-line-left .time-line-box{
-
-    position: absolute;
-    right: calc(50% + 60px);
-
-}
-
-#area-4 .time-line-left .time-line-box::after{
-     content: " ";
-     height: 0;
-     position: absolute;
-     top: 20px;
-     width: 0;
-     z-index: 1;
-     right: -15px;
-     border: medium solid white;
-     border-width: 12px 0px 12px 15px;
-     border-color: transparent transparent transparent white;
- }
-
-#area-4 .time-line span{
-    display: flex; 
-    padding: 0px; 
-    border-radius: 50%; 
-    border: solid 12px rgb(255, 150, 120);
-    width: 5px;
-    height: 5px;
-}
-
-#area-4 .time-line-div {
-    margin: auto;
-    display: flex; 
-    width: 0px; 
-    height: 100px; 
-    border: solid 3px rgb(255, 187, 163);
-}
 
 
 #area-5 {
@@ -528,7 +439,91 @@ body{ max-width: 100% ;}
     box-shadow: 0px 4px 12px #0005;
 }
 
+/* \/ \/ \/ \/ Time-Line\/ \/ \/ \/ */
 
+.time-line{
+    margin: auto;
+    width: 100%;
+    background: #2a2a2a;
+    clip-path: polygon(0% 0%, 0% 95%, 50% 100%, 100% 95%, 100% 0%, 50% 5%);
+}
+
+.time-line .right{
+    position:relative;
+}
+
+.time-line .time-line-point{
+    margin: auto;
+    width: 34px;
+    height: 34px;
+    display: flex; 
+    padding: 2px; 
+    border-radius: 50%; 
+    border: solid 3px rgb(255, 100, 44);
+}
+.time-line-box {
+    background: white;
+    top: -15px;
+    width: 350px;
+    height: 150px;
+    border-radius: 10px;
+    box-shadow: 2px 4px 10px #0000002e;
+}
+
+.time-line .right .time-line-box{
+    position: absolute;
+    left: calc(50% + 60px);
+
+}
+
+
+.time-line .right .time-line-box::after{
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 20px;
+    width: 0;
+    z-index: 1;
+    left: -14px;
+    border: medium solid white;
+    border-width: 12px 15px 12px 0;
+    border-color: transparent white transparent transparent;
+}
+
+.time-line .left{
+    position:relative;
+}
+
+.time-line .left .time-line-box{
+
+    position: absolute;
+    right: calc(50% + 60px);
+
+}
+
+.time-line .left .time-line-box::after{
+     content: " ";
+     height: 0;
+     position: absolute;
+     top: 20px;
+     width: 0;
+     z-index: 1;
+     right: -15px;
+     border: medium solid white;
+     border-width: 12px 0px 12px 15px;
+     border-color: transparent transparent transparent white;
+ }
+
+
+.time-line .time-line-div {
+    margin: auto;
+    display: flex; 
+    width: 0px; 
+    height: 100px; 
+    border: solid 3px rgb(255, 187, 163);
+}
+
+/* /\ /\ /\ /\ Time-Line /\ /\ /\ /\*/
 
 /** Animação */
 
