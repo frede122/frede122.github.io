@@ -459,15 +459,54 @@ body{ max-width: 100% ;}
     display: flex; 
     padding: 2px; 
     border-radius: 50%; 
-    border: solid 3px rgb(255, 100, 44);
+    border: solid 4px rgb(255, 100, 44);
+    background: rgb(235, 235, 235);
 }
+
+.time-line .left .time-line-point p{
+    left: -80px;
+    width: 50px;
+    position: relative;
+    color: orangered;
+    font-size: 30px;
+    /* font-stretch: condensed; */
+    font-weight: 500;
+    top: -10px;
+} 
+.time-line .right .time-line-point p{
+    left: 40px;
+    width: 50px;
+    position: relative;
+    color: orangered;
+    font-size: 30px;
+    /* font-stretch: condensed; */
+    font-weight: 500;
+    top: -10px;
+} 
 .time-line-box {
     background: white;
-    top: -15px;
-    width: 350px;
+    top: 80px;
+    width: 300px;
     height: 150px;
-    border-radius: 10px;
+    border-radius: 11px;
     box-shadow: 2px 4px 10px #0000002e;
+}
+
+.time-line-box h3{
+    text-align: center;
+    /*height: 50px;*/
+    background: orangered;
+    padding: 10px 0px 10px 0px;
+    border-radius: 10px 10px 0px 0px;
+    color: white;
+    font-size:35px;
+}
+.time-line-box p{
+    color: orangered;
+    /*text-indent: 50px;*/
+    text-align: center;
+    font-size: 25px;
+
 }
 
 .time-line .right .time-line-box{
@@ -485,9 +524,9 @@ body{ max-width: 100% ;}
     width: 0;
     z-index: 1;
     left: -14px;
-    border: medium solid white;
+    border: medium solid orangered;
     border-width: 12px 15px 12px 0;
-    border-color: transparent white transparent transparent;
+    border-color: transparent orangered transparent transparent;
 }
 
 .time-line .left{
@@ -509,9 +548,9 @@ body{ max-width: 100% ;}
      width: 0;
      z-index: 1;
      right: -15px;
-     border: medium solid white;
+     border: medium solid orangered;
      border-width: 12px 0px 12px 15px;
-     border-color: transparent transparent transparent white;
+     border-color: transparent transparent transparent orangered;
  }
 
 
@@ -519,8 +558,8 @@ body{ max-width: 100% ;}
     margin: auto;
     display: flex; 
     width: 0px; 
-    height: 100px; 
-    border: solid 3px rgb(255, 187, 163);
+    height: 150px; 
+    border: solid 3px rgb(255, 100, 44);
 }
 
 /* /\ /\ /\ /\ Time-Line /\ /\ /\ /\*/
