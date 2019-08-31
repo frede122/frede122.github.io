@@ -103,6 +103,7 @@ body{ max-width: 100% ;}
     width: 100%;
     padding: 5%;
     background-color: rgb(251, 251, 251);
+    /*background-image: linear-gradient(45deg, rgb(0, 10, 82), orangered);*/
 }
 #area-3 {
     background-color:#000;
@@ -238,12 +239,13 @@ body{ max-width: 100% ;}
 #header {
     width: 100%;
     display: flex;
-    height: 630px;
+    height: 675px;
     color: #fff;
     flex-flow: column;
-    background-color: rgba(0,0,80,1);
+    background-color: orangered;
+    background-image: linear-gradient(to right,orange,orangered, orangered, red, red, orangered, orangered, orange, orangered, orangered, red);
     text-shadow: 3px 3px 19px rgba(0, 0, 0, 0.267);
-    border-bottom-right-radius:250px;
+
     
 }
 
@@ -257,14 +259,14 @@ body{ max-width: 100% ;}
     position: absolute;
     top: 0; bottom: 0;
     left: 0; right: 0;   
-    filter: grayscale(45%);
+    filter: grayscale(65%);
     background-attachment: fixed;
     transition: 1s;
     background-repeat: no-repeat;
     background-size: cover;
-    opacity: 0.88;
+    opacity: 1;
     background-image: url(../img/9.jpg);
-    border-bottom-right-radius: 250px;
+    border-bottom-right-radius: 70px;
 
 }
 
