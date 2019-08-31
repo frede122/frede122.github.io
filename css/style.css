@@ -45,18 +45,18 @@ body{ max-width: 100% ;}
 #area-2 .glyphicon{
     font-size: 60px;
     left: 40%;
-    color: orangered;
+    color: rgb(255, 38, 0);
 }
 
 #area-2 p {
-    color: #555555;
+    color: whitesmoke;
 }
 #area-2 h4{
     /*color:rgba(223, 59, 0, 0.829);*/
-    color:#353535;
+    color:white;
 }
 #area-2 h2{
-    color:orangered;
+    color: white;
     text-align: center;
     margin-bottom: 45px;
     /*font-size: 45px;*/
@@ -68,7 +68,7 @@ body{ max-width: 100% ;}
     margin-bottom: 40px;
 }
 #area-2 .col-lg-4:hover h4{
-    color: rgba(97, 31, 0, 0.829);
+    color: rgb(255, 38, 0);
 }
 
 #area-2 .col-lg-4:hover .glyphicon-wrench{
@@ -103,7 +103,7 @@ body{ max-width: 100% ;}
     width: 100%;
     padding: 5%;
     background-color: rgb(251, 251, 251);
-    /*background-image: linear-gradient(45deg, rgb(0, 10, 82), orangered);*/
+    background-image: linear-gradient(45deg, rgb(0, 10, 82), orangered);
 }
 #area-3 {
     background-color:#000;
@@ -243,7 +243,7 @@ body{ max-width: 100% ;}
     color: #fff;
     flex-flow: column;
     background-color: orangered;
-    background-image: linear-gradient(to right,orange,orangered, orangered, red, red, orangered, orangered, orange, orangered, orangered, red);
+    background-image: linear-gradient(110deg, #461571,orangered );
     text-shadow: 3px 3px 19px rgba(0, 0, 0, 0.267);
 
     
