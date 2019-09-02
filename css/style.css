@@ -46,14 +46,17 @@ body{ max-width: 100% ;}
     font-size: 60px;
     left: 40%;
     color: rgb(255, 38, 0);
+    text-shadow: 3px 3px 15px #00000045
 }
 
 #area-2 p {
     color: whitesmoke;
+    text-shadow: 3px 3px 10px #00000078;
 }
 #area-2 h4{
     /*color:rgba(223, 59, 0, 0.829);*/
     color:white;
+    text-shadow: 3px 3px 10px #00000078;
 }
 #area-2 h2{
     color: white;
@@ -63,6 +66,7 @@ body{ max-width: 100% ;}
     font-size: 3rem;
     font-weight: 550;
     font-family: 'Rubik', sans-serif;
+    text-shadow: 3px 3px 10px #00000078;
 }
 #area-2 .col-lg-4 .row {
     margin-bottom: 40px;
@@ -257,16 +261,34 @@ body{ max-width: 100% ;}
     height: 630px;
     content: '';
     position: absolute;
-    top: 0; bottom: 0;
-    left: 0; right: 0;   
-    filter: grayscale(65%);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    filter: grayscale(55%) brightness(0.9);
     background-attachment: fixed;
     transition: 1s;
     background-repeat: no-repeat;
     background-size: cover;
     opacity: 1;
-    background-image: url(../img/9.jpg);
-    border-bottom-right-radius: 70px;
+    background-image: url(../img/5.jpg);
+    border-bottom-right-radius: 300px;
+
+}
+
+
+#header::after{
+    width: 100%;
+    display: flex;
+    height: 630px;
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-bottom-right-radius: 300px;
+    background-image: linear-gradient(45deg, black, transparent, transparent, transparent), linear-gradient(135deg, black, transparent);
 
 }
 
