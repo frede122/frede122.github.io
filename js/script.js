@@ -7,7 +7,7 @@ function stickyBar(){
 }
 
 function stickyArea(){
-    var area = document.getElementById("area-3");
+    var area = document.getElementById("question-section");
     var about = document.getElementById("aboutme");
     var imgAbout = document.getElementById("img-user");
     if(window.pageYOffset + (screen.height * 0.7 ) >= area.offsetTop){
