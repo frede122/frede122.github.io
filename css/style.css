@@ -110,9 +110,10 @@ body{ max-width: 100% ;}
     background-image: linear-gradient(45deg, rgb(0, 10, 82), orangered);
 }
 #area-3 {
-    background-color:#000;
+    background-color: #3a3a3a;
     clip-path: polygon(0% 0%, 0% 100%, 100% 90%, 100% 0%);
     min-height: 510px;
+    background-image: radial-gradient(transparent, black, black);
     max-height: 700px;
     display: flex;
     align-items: center;
@@ -124,7 +125,8 @@ body{ max-width: 100% ;}
 }
 
 #area-3 .container{
-    min-height: 510px;
+    min-height: 580px;
+    height: 600px;
     max-height: 700px;
     display: flex;
     align-items: center;
@@ -163,11 +165,11 @@ body{ max-width: 100% ;}
     background-color: blue;
     background-attachment: fixed;
     background-image: url(../img/7.jpg);
-    background-position:top;
+    background-position: top;
     background-size: cover;
     z-index: 1;
-    filter:blur(4px)grayscale(50%)  opacity(0.3);
-    top:-520px;
+    filter: blur(4px)grayscale(50%) opacity(0.15);
+    top: -600px;
     position: relative;
     
 }
