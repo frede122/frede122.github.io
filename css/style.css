@@ -69,9 +69,31 @@ body{ max-width: 100% ;}
     display: flex;
     flex-flow: wrap;
 }
+#header h2{
+    /*text-align: center;*/
+    font-size: 60px;
+    justify-items: center;
+    margin-top: 100px;
+    max-width: 500px;
+    width: 100%;
+    margin-left: 50px;
+}
+#header h2 span{
+    font-size: 100px;
+    color: orangered;
+}
+#header p span{
+    font-size: 50px;
+    color: white;
+}
 #header p{    
-    margin: 0;
-	font-size: 2em;
+    margin-left: 50px;
+    font-size: 1.5em;
+    /*text-align: center;*/
+    justify-items: center;
+    color:orangered;
+    max-width: 500px;
+    width: 80%;
 }
 
 /*-----Menu-----*/
