@@ -551,9 +551,10 @@ body{ max-width: 100% ;}
 }
 #skill-section .skill-item{
     display: block;
-    width:30%;
+    width: 25%;
     min-width: 300px;
-    margin-left: 3%;
+    margin-left: 3.5%;
+    margin-right: 3.5%;
 }
 #skill-section .progress{
     margin-top:10px;
@@ -570,6 +571,8 @@ body{ max-width: 100% ;}
 #skill-section .progress .css{ background-color: rgb(43, 57, 255); }
 #skill-section .progress .js{ background-color: rgb(236, 180, 0); }
 #skill-section .progress .wp{ background-color: rgb(0, 0, 0); }
+#skill-section .progress .php{ background-color: #5766b1; }
+#skill-section .progress .btp{ background-color: rgb(83, 30, 169);}
 #skill-section .skill-item img{
     height: 75px;
     margin: 5px;
