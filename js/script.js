@@ -13,7 +13,6 @@ function scrollFunction() {
     var glyphiconQrCode =  document.getElementById("glyphicon-qrcode");
     var glyphiconPhone =  document.getElementById("glyphicon-phone");
 
-
     // Menu Area 
     const altura = window.innerHeight;
     if (window.pageYOffset > stickymenu.offsetTop) {
@@ -49,6 +48,23 @@ function scrollFunction() {
     if(window.pageYOffset > (information.offsetTop - altura + 100 )){
         informationLogo.classList.add("fadeInRight");
         informationDescr.classList.add("fadeInLeft");
+    }
+
+    // Timeline
+    if(window.pageYOffset > (firstItem.offsetTop - altura)) { 
+        firstItem.children[0].children[0].classList.add("fadeInLeft",  "slow", "animated"  );
+        firstItem.children[1].classList.add("fadeIn", "animated", "slower", "delay-05s");
+        thirdItem.children[0].children[0].classList.add("fadeInRight", "animated", "delay-1s");
+    }
+    if(window.pageYOffset > (fifthItem.offsetTop - altura)) { 
+        fifthItem.children[0].children[0].classList.add("fadeInRight", "animated"  );
+        fifthItem.children[1].classList.add("fadeIn", "animated", "slower", "delay-05s");
+        seventhItem.children[0].children[0].classList.add("fadeInLeft", "animated", "delay-1s");
+    }
+    if(window.pageYOffset > (ninthItem.offsetTop - altura)) { 
+        ninthItem.children[0].children[0].classList.add("fadeInLeft", "animated"  );
+        ninthItem.children[1].classList.add("fadeIn", "animated", "slower", "delay-05s");
+        eleventhItem.children[0].children[0].classList.add("fadeInRight", "animated", "delay-1s");
     }
 
 }
